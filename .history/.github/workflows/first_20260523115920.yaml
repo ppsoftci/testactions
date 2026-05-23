@@ -1,7 +1,0 @@
-name: LLL
-
-on:
-  push:
-
-jobs:
-  
