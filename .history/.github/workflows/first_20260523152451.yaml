@@ -20,4 +20,4 @@ jobs:
         working-directory: ./project1
       - name: Run app test
         run : npm test
-        working-directory: ./project1
+        working-directory: project1
