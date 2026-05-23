@@ -14,8 +14,4 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v6
         with:
-          node-version: 26
-      - name: Install dependencies
-        run: npm ci  
-      - name: Run app test
-        run : npm test
+          
