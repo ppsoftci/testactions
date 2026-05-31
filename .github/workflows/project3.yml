@@ -3,12 +3,13 @@ on:
   push:
     branches:
       - main
-defaults:
-  run:
-    working-directory: project3
+
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project3
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -21,6 +22,9 @@ jobs:
   build:
     needs: test
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project3
     steps:
       - name: Get code
         uses: actions/checkout@v3
